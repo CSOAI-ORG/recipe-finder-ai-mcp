@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "recipe-finder-ai-mcp"
+version = "0.1.0"
+description = "Find recipes by available ingredients, cuisine type, and dietary filters."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0",
+]
+
+[project.scripts]
+recipe_finder_ai_mcp = "recipe_finder_ai_mcp.server:main"
