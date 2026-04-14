@@ -1,3 +1,19 @@
 name: recipe-finder-ai-mcp
-description: MEOK AI Labs - Urecipe finder ai
+description: Find recipes by available ingredients, cuisine type, and dietary filters.
 version: 1.0.0
+tools:
+- name: find_recipe
+  description: ''
+  parameters:
+  - name: ingredients
+    type: array
+    required: true
+  - name: max_time_min
+    type: integer
+    required: false
+- name: substitute_ingredient
+  description: ''
+  parameters:
+  - name: ingredient
+    type: string
+    required: true
