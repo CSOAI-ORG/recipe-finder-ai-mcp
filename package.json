@@ -1,7 +1,7 @@
 {
   "name": "recipe-finder-ai-mcp",
   "version": "1.0.0",
-  "description": "MEOK AI Labs MCP Server: recipe-finder-ai-mcp",
+  "description": "Recipe Finder Ai MCP server. Tools: find recipe, substitute ingredient, plan weekly meals. Built by MEOK AI Labs.",
   "main": "server.py",
   "scripts": {
     "start": "python server.py"

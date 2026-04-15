@@ -1,6 +1,6 @@
 {
   "name": "recipe-finder-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Recipe search and meal planning. Find recipes by ingredients, get substitutions, plan meals, and est",
+  "description": "Recipe Finder Ai MCP server. Tools: find recipe, substitute ingredient, plan weekly meals. Built by MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {
