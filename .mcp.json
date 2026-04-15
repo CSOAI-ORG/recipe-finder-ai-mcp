@@ -1,19 +1,25 @@
 {
   "name": "recipe-finder-ai-mcp",
-  "description": "Find recipes by available ingredients, cuisine type, and dietary filters.",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Recipe search and meal planning. Find recipes by ingredients, get substitutions, plan meals, and est",
   "version": "1.0.0",
   "tools": [
     {
       "name": "find_recipe",
-      "description": "",
+      "description": "Find recipes matching available ingredients. Ingredients as comma-separated string.",
       "parameters": {
         "type": "object",
         "properties": {
           "ingredients": {
-            "type": "array"
+            "type": "string"
           },
           "max_time_min": {
             "type": "integer"
+          },
+          "cuisine": {
+            "type": "string"
+          },
+          "diet": {
+            "type": "string"
           }
         },
         "required": [
@@ -23,16 +29,53 @@
     },
     {
       "name": "substitute_ingredient",
-      "description": "",
+      "description": "Get ingredient substitutions, optionally filtered by dietary preference.",
       "parameters": {
         "type": "object",
         "properties": {
           "ingredient": {
             "type": "string"
+          },
+          "dietary_preference": {
+            "type": "string"
           }
         },
         "required": [
           "ingredient"
+        ]
+      }
+    },
+    {
+      "name": "plan_weekly_meals",
+      "description": "Generate a weekly meal plan based on preferences.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "servings": {
+            "type": "integer"
+          },
+          "diet": {
+            "type": "string"
+          },
+          "max_time_min": {
+            "type": "integer"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "estimate_nutrition",
+      "description": "Estimate approximate nutritional content from ingredient list (comma-separated).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ingredients": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "ingredients"
         ]
       }
     }

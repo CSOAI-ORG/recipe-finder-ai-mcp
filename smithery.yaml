@@ -1,19 +1,48 @@
 name: recipe-finder-ai-mcp
-description: Find recipes by available ingredients, cuisine type, and dietary filters.
+description: Recipe search and meal planning. Find recipes by ingredients, get substitutions,
+  plan meals, and est
 version: 1.0.0
 tools:
 - name: find_recipe
-  description: ''
+  description: Find recipes matching available ingredients. Ingredients as comma-separated
+    string.
   parameters:
   - name: ingredients
-    type: array
+    type: string
     required: true
   - name: max_time_min
     type: integer
     required: false
+  - name: cuisine
+    type: string
+    required: false
+  - name: diet
+    type: string
+    required: false
 - name: substitute_ingredient
-  description: ''
+  description: Get ingredient substitutions, optionally filtered by dietary preference.
   parameters:
   - name: ingredient
+    type: string
+    required: true
+  - name: dietary_preference
+    type: string
+    required: false
+- name: plan_weekly_meals
+  description: Generate a weekly meal plan based on preferences.
+  parameters:
+  - name: servings
+    type: integer
+    required: false
+  - name: diet
+    type: string
+    required: false
+  - name: max_time_min
+    type: integer
+    required: false
+- name: estimate_nutrition
+  description: Estimate approximate nutritional content from ingredient list (comma-separated).
+  parameters:
+  - name: ingredients
     type: string
     required: true
