@@ -1,25 +1,68 @@
-# Recipe Finder AI MCP
+# Recipe Finder Ai
 
-Find recipes by available ingredients, cuisine type, and dietary filters.
+> By [MEOK AI Labs](https://meok.ai) — Recipe search and meal planning. Find recipes by ingredients, get substitutions, plan meals, and estimate nutrition. By MEOK AI Labs.
+
+Recipe Finder AI MCP — MEOK AI Labs. Recipe search, ingredient substitution, meal planning, nutrition estimation.
+
+## Installation
+
+```bash
+pip install recipe-finder-ai-mcp
+```
+
+## Usage
+
+```bash
+# Run standalone
+python server.py
+
+# Or via MCP
+mcp install recipe-finder-ai-mcp
+```
 
 ## Tools
 
-- `search_by_ingredients` — Find recipes matching provided ingredients.
-- `get_recipe_details` — Get detailed steps for a recipe by name.
-- `filter_by_diet` — Filter recipes by dietary preference.
+### `find_recipe`
+Find recipes matching available ingredients. Ingredients as comma-separated string.
 
-## Install
+**Parameters:**
+- `ingredients` (str)
+- `max_time_min` (int)
+- `cuisine` (str)
+- `diet` (str)
 
-```bash
-pip install -e .
-```
+### `substitute_ingredient`
+Get ingredient substitutions, optionally filtered by dietary preference.
 
-## Run
+**Parameters:**
+- `ingredient` (str)
+- `dietary_preference` (str)
 
-```bash
-python -m recipe-finder-ai-mcp.server
-```
+### `plan_weekly_meals`
+Generate a weekly meal plan based on preferences.
+
+**Parameters:**
+- `servings` (int)
+- `diet` (str)
+- `max_time_min` (int)
+
+### `estimate_nutrition`
+Estimate approximate nutritional content from ingredient list (comma-separated).
+
+**Parameters:**
+- `ingredients` (str)
+
+
+## Authentication
+
+Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+
+## Links
+
+- **Website**: [meok.ai](https://meok.ai)
+- **GitHub**: [CSOAI-ORG/recipe-finder-ai-mcp](https://github.com/CSOAI-ORG/recipe-finder-ai-mcp)
+- **PyPI**: [pypi.org/project/recipe-finder-ai-mcp](https://pypi.org/project/recipe-finder-ai-mcp/)
 
 ## License
 
-MIT
+MIT — MEOK AI Labs
