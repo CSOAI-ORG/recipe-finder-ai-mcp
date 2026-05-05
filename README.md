@@ -1,68 +1,38 @@
-# Recipe Finder Ai
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — Recipe search and meal planning. Find recipes by ingredients, get substitutions, plan meals, and estimate nutrition. By MEOK AI Labs.
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/recipe-finder-ai-mcp)](https://github.com/CSOAI-ORG/recipe-finder-ai-mcp/stargazers)
 
-Recipe Finder AI MCP — MEOK AI Labs. Recipe search, ingredient substitution, meal planning, nutrition estimation.
+# urecipeU finderU aiU mcp
+
+**Recipe Finder AI MCP — MEOK AI Labs. Recipe search, ingredient substitution, meal planning, nutrition estimation.**
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/recipe-finder-ai-mcp)](https://www.npmjs.com/package/@meok-ai/recipe-finder-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/recipe-finder-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install recipe-finder-ai-mcp
+# or
+npm install -g @meok-ai/recipe-finder-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-# Run standalone
-python server.py
+See the project repository for full documentation and examples.
 
-# Or via MCP
-mcp install recipe-finder-ai-mcp
-```
+## Enterprise Support
 
-## Tools
-
-### `find_recipe`
-Find recipes matching available ingredients. Ingredients as comma-separated string.
-
-**Parameters:**
-- `ingredients` (str)
-- `max_time_min` (int)
-- `cuisine` (str)
-- `diet` (str)
-
-### `substitute_ingredient`
-Get ingredient substitutions, optionally filtered by dietary preference.
-
-**Parameters:**
-- `ingredient` (str)
-- `dietary_preference` (str)
-
-### `plan_weekly_meals`
-Generate a weekly meal plan based on preferences.
-
-**Parameters:**
-- `servings` (int)
-- `diet` (str)
-- `max_time_min` (int)
-
-### `estimate_nutrition`
-Estimate approximate nutritional content from ingredient list (comma-separated).
-
-**Parameters:**
-- `ingredients` (str)
-
-
-## Authentication
-
-Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
-
-## Links
-
-- **Website**: [meok.ai](https://meok.ai)
-- **GitHub**: [CSOAI-ORG/recipe-finder-ai-mcp](https://github.com/CSOAI-ORG/recipe-finder-ai-mcp)
-- **PyPI**: [pypi.org/project/recipe-finder-ai-mcp](https://pypi.org/project/recipe-finder-ai-mcp/)
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
