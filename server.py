@@ -67,6 +67,14 @@ def find_recipe(ingredients: str, max_time_min: int = 60, cuisine: str = "", die
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        ingredients (str): The ingredients to analyze or process.
+        max_time_min (int): The max time min to analyze or process.
+        cuisine (str): The cuisine to analyze or process.
+        diet (str): The diet to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -138,6 +146,12 @@ def substitute_ingredient(ingredient: str, dietary_preference: str = "", api_key
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        ingredient (str): The ingredient to analyze or process.
+        dietary_preference (str): The dietary preference to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -193,6 +207,13 @@ def plan_weekly_meals(servings: int = 2, diet: str = "", max_time_min: int = 45,
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        servings (int): The servings to analyze or process.
+        diet (str): The diet to analyze or process.
+        max_time_min (int): The max time min to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -259,6 +280,11 @@ def estimate_nutrition(ingredients: str, api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        ingredients (str): The ingredients to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
