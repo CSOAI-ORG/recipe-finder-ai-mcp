@@ -1,3 +1,5 @@
+[![recipe-finder-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/recipe-finder-ai-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/recipe-finder-ai-mcp)
+
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/recipe-finder-ai-mcp)](https://github.com/CSOAI-ORG/recipe-finder-ai-mcp/stargazers)
