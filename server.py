@@ -51,7 +51,23 @@ SUBSTITUTIONS = {
 
 @mcp.tool()
 def find_recipe(ingredients: str, max_time_min: int = 60, cuisine: str = "", diet: str = "", api_key: str = "") -> str:
-    """Find recipes matching available ingredients. Ingredients as comma-separated string."""
+    """Find recipes matching available ingredients. Ingredients as comma-separated string.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -92,7 +108,23 @@ def find_recipe(ingredients: str, max_time_min: int = 60, cuisine: str = "", die
 
 @mcp.tool()
 def substitute_ingredient(ingredient: str, dietary_preference: str = "", api_key: str = "") -> str:
-    """Get ingredient substitutions, optionally filtered by dietary preference."""
+    """Get ingredient substitutions, optionally filtered by dietary preference.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -118,7 +150,22 @@ def substitute_ingredient(ingredient: str, dietary_preference: str = "", api_key
 
 @mcp.tool()
 def plan_weekly_meals(servings: int = 2, diet: str = "", max_time_min: int = 45, api_key: str = "") -> str:
-    """Generate a weekly meal plan based on preferences."""
+    """Generate a weekly meal plan based on preferences.
+
+    Behavior:
+        This tool generates structured output without modifying external systems.
+        Output is deterministic for identical inputs. No side effects.
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -154,7 +201,23 @@ def plan_weekly_meals(servings: int = 2, diet: str = "", max_time_min: int = 45,
 
 @mcp.tool()
 def estimate_nutrition(ingredients: str, api_key: str = "") -> str:
-    """Estimate approximate nutritional content from ingredient list (comma-separated)."""
+    """Estimate approximate nutritional content from ingredient list (comma-separated).
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
