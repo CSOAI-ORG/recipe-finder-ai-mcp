@@ -1,0 +1,9 @@
+# recipe-finder-ai-mcp - Auto-trigger Rules
+
+When the user asks about recipe finder, use recipe-finder-ai-mcp tools: find_recipe, substitute_ingredient, plan_weekly_meals, estimate_nutrition
+
+**MCP server for recipe finder ai mcp operations**
+
+Install: `pip install recipe-finder-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "recipe-finder-ai-mcp"
-version = "1.0.4"
+version = "1.0.6"
 readme = "README.md"
 description = "Recipe Finder Ai MCP server. Tools: find recipe, substitute ingredient, plan weekly meals. Built by MEOK AI Labs."
 license = {file = "LICENSE"}
@@ -22,7 +22,7 @@ Homepage = "https://meok.ai"
 Repository = "https://github.com/CSOAI-ORG/recipe-finder-ai-mcp"
 [tool.hatch.build.targets.wheel]
 packages = ["."]
-only-include = ["server.py"]
+only-include = ["server.py", "auth_middleware.py"]
 
 [project.scripts]
 recipe_finder_ai_mcp = "server:main"

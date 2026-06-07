@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Recipe Finder AI MCP — MEOK AI Labs. Recipe search, ingredient substitution, meal planning, nutrition estimation."""
+"""
+Recipe Finder AI MCP — MEOK AI Labs. Recipe search, ingredient substitution, meal planning, nutrition estimation."""
 
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import json
@@ -92,7 +92,7 @@ def find_recipe(ingredients: str, max_time_min: int = 60, cuisine: str = "", die
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(): return err
 
     user_ingredients = {i.strip().lower() for i in ingredients.split(",") if i.strip()}
@@ -169,7 +169,7 @@ def substitute_ingredient(ingredient: str, dietary_preference: str = "", api_key
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(): return err
 
     key = ingredient.lower().strip()
@@ -231,7 +231,7 @@ def plan_weekly_meals(servings: int = 2, diet: str = "", max_time_min: int = 45,
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(): return err
 
     eligible = []
@@ -302,7 +302,7 @@ def estimate_nutrition(ingredients: str, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(): return err
 
     # Rough calorie estimates per ingredient category
@@ -331,5 +331,8 @@ def estimate_nutrition(ingredients: str, api_key: str = "") -> str:
     return {"ingredients": breakdown, "total_estimated_calories": total, "note": "Rough estimates — actual values depend on portion sizes"}
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()

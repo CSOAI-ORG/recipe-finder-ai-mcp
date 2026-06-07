@@ -1,0 +1,33 @@
+# recipe-finder-ai-mcp
+# **MCP server for recipe finder ai mcp operations**
+
+## Install
+```bash
+pip install recipe-finder-ai-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `find_recipe`
+Find recipes matching available ingredients. Ingredients as comma-separated string.
+
+### `substitute_ingredient`
+Get ingredient substitutions, optionally filtered by dietary preference.
+
+### `plan_weekly_meals`
+Generate a weekly meal plan based on preferences.
+
+### `estimate_nutrition`
+Estimate approximate nutritional content from ingredient list (comma-separated).
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.
