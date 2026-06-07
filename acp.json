@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "recipe-finder-ai-mcp",
+    "description": "Recipe Finder Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "recipe-finder-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "find_recipe",
+      "substitute_ingredient",
+      "plan_weekly_meals",
+      "estimate_nutrition"
+    ]
+  }
+}

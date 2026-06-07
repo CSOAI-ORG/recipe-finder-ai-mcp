@@ -1,0 +1,59 @@
+{
+  "name": "recipe-finder-ai-mcp",
+  "description": "Recipe Finder Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/recipe-finder-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "find_recipe",
+      "name": "Find Recipe",
+      "description": "find_recipe via recipe-finder-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "substitute_ingredient",
+      "name": "Substitute Ingredient",
+      "description": "substitute_ingredient via recipe-finder-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "plan_weekly_meals",
+      "name": "Plan Weekly Meals",
+      "description": "plan_weekly_meals via recipe-finder-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "estimate_nutrition",
+      "name": "Estimate Nutrition",
+      "description": "estimate_nutrition via recipe-finder-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
